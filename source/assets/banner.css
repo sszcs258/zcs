@@ -1,0 +1,18 @@
+/* 顶部banner蒙版 */
+#page-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.35);
+  z-index: 1;
+}
+#page-header .page-header-title {
+  z-index: 2;
+  position: relative;
+}
+#page-header {
+  transition: background-image 1.2s ease-in-out;
+}
